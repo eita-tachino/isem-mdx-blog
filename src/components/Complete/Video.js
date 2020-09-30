@@ -66,7 +66,7 @@ const IframeVideoWrapper = styled.div`
   }
 `
 
-// Video.defaultProps = {
-//   src: 'https://www.youtube.com/embed/-8ORfgUa8ow',
-//   title: 'the best html css tutorial ever !',
-// }
+Video.defaultProps = {
+  src: 'https://www.youtube.com/embed/-8ORfgUa8ow',
+  title: 'the best html css tutorial ever !',
+}
