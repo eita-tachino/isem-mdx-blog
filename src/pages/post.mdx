@@ -1,0 +1,190 @@
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton, RegVideo, Video } from '../components/Complete'
+
+<section className="mdx-page">
+
+<div className="mdx-img">
+
+![nice image](../assets/gatsby-1.png)
+
+</div>
+
+## my mdx file
+
+** 木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。
+一筋の街道はこの深い森林地帯を貫いていた。** 東ざかいの桜沢から、
+西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。
+道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。名高い桟も、蔦のかずらを頼みにしたような危い場処ではなくなって、
+徳川時代の末にはすでに渡ることのできる橋であった。新規に新規にとできた道はだんだん谷の下の方の位置へと降って来た。
+道の狭いところには、木を伐って並べ、藤づるでからめ、_それで街道の狭いのを補った。長い間にこの木曾路に起こって来た変化は、
+いくらかずつでも嶮岨な山坂の多いところを歩きよくした。_
+
+<div className="code">
+
+```js
+const firstName = 'john'
+const lastName = 'smith'
+```
+
+</div>
+
+<div className="nice-text">
+
+<h3>h3 text </h3>
+
+<FiInfo className="nice-text-icon"></FiInfo>
+
+新規に新規にとできた道はだんだん谷の下の方の位置へと降って来た。
+道の狭いところには、木を伐って並べ、藤づるでからめ、
+それで街道の狭いのを補った。長い間にこの木曾路に起こって来た変化は、いくらかずつでも嶮岨な山坂の多いところを歩きよくした。
+
+</div>
+
+<h2> React Components </h2>
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
+
+<h2>
+
+video components
+
+</h2>
+
+<RegVideo />
+<Video />
+
+<h2>regular heading</h2>
+
+<h2 title="true">title heading</h2>
+
+<h4>inline code</h4>
+
+`console.log('hello mate')`
+
+<h4>blockquote elememt</h4>
+
+<blockquote display="default">
+
+新規に新規にとできた道はだんだん谷の下の方の位置へと降って来た。
+道の狭いところには、木を伐って並べ、藤づるでからめ、
+それで街道の狭いのを補った。長い間にこの木曾路に起こって来た変化は、いくらかずつでも嶮岨な山坂の多いところを歩きよくした。
+
+</blockquote>
+
+<blockquote display="info">
+
+新規に新規にとできた道はだんだん谷の下の方の位置へと降って来た。
+道の狭いところには、木を伐って並べ、藤づるでからめ、
+それで街道の狭いのを補った。長い間にこの木曾路に起こって来た変化は、いくらかずつでも嶮岨な山坂の多いところを歩きよくした。
+
+</blockquote>
+
+<blockquote display="warning">
+
+新規に新規にとできた道はだんだん谷の下の方の位置へと降って来た。
+道の狭いところには、木を伐って並べ、藤づるでからめ、
+それで街道の狭いのを補った。長い間にこの木曾路に起こって来た変化は、いくらかずつでも嶮岨な山坂の多いところを歩きよくした。
+
+</blockquote>
+
+<blockquote>
+
+** 木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。
+一筋の街道はこの深い森林地帯を貫いていた。** 東ざかいの桜沢から、
+西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。
+道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。名高い桟も、蔦のかずらを頼みにしたような危い場処ではなくなって、
+徳川時代の末にはすでに渡ることのできる橋であった。新規に新規にとできた道はだんだん谷の下の方の位置へと降って来た。
+道の狭いところには、木を伐って並べ、藤づるでからめ、\_それで街道の狭いのを補った。長い間にこの木曾路に起こって来た変化は、
+いくらかずつでも嶮岨な山坂の多いところを歩きよくした。
+
+</blockquote>
+
+#### Javascript
+
+```js
+// comments
+const name = 'john'
+const channel = 'coding addict'
+
+function featuredProducts(data) {
+  return data.filter(item => {
+    return item.featured === true
+  })
+}
+featuredProducts()
+```
+
+#### JSX
+
+```jsx
+import React from 'react'
+
+const Counter = () => {
+  const [count, setCount] = React.useState(0)
+  return (
+    <section className="counter">
+      <h4>show some love to MDX</h4>
+      <h4>likes {count}</h4>
+      <button className="btn btn-danger" onClick={() => setCount(count + 1)}>
+        i like mdx
+      </button>
+    </section>
+  )
+}
+export default Counter
+```
+
+#### HTML
+
+```html
+<h1>hello world</h1>
+<p class="random">random text</p>
+<section class="contact">
+  <div class="title">
+    <h1>contact us</h1>
+  </div>
+</section>
+```
+
+#### CSS
+
+```css
+max-width: 500px;
+border-radius: var(--radius);
+padding: 1rem 1.5rem;
+background: var(--clr-grey-10);
+text-align: center;
+```
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+
+</section>
