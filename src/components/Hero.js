@@ -4,7 +4,7 @@ import Image from 'gatsby-image'
 
 const query = graphql`
   {
-    person: file(relativePath: { eq: "person.png" }) {
+    person: file(relativePath: { eq: "mdx-main.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

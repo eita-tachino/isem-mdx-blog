@@ -23,8 +23,12 @@ const About = () => {
     <Wrapper>
       <Title title="about us" />
       <Image fixed={data.person.childImageSharp.fixed} className="img" />
+      <p>IsemはZoomとSlackを活用したオンライン学習塾です。</p>
       <p>
-        一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。
+        数学は京大理学部出身のsouが担当し、あなたの志望校合格に向け、スケジュール管理なども丁寧にサポートします。
+      </p>
+      <p>
+        英語は”活きた英語力”を身につけてもらうため、Slackのチャットを使い、実際に、海外の方やネイティブスピーカーとコミュニケーションをとることもできます！
       </p>
       <SocialLinks styleClass="banner-icons" />
     </Wrapper>
